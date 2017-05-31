@@ -1,0 +1,7 @@
+<?php
+
+function autoLoader($className) {
+    include __DIR__ . "\\" . strtolower($className) . '.php';
+}
+
+spl_autoload_register('autoLoader');
